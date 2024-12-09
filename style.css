@@ -1,0 +1,105 @@
+*{
+    font-family: "Funnel Display", sans-serif;
+    color: #00264b;
+    /*outline: 1px solid red;*/
+}
+body{
+    background: #e6fdff;
+    margin: 0;
+    padding: 0;
+}
+
+.landing-section-image-container{
+    height: 90vh;
+    aspect-ratio: 1;
+}
+.landing-section-image{
+    width: inherit;
+    height: inherit;
+}
+.landing-section-container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.landing-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+}
+.landing-section-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.happy,
+.to-you{
+    font-size: 40px;
+}
+.birthday{
+    font-family: "Great Vibes", cursive;
+    font-size: 190px;
+    font-weight: 500;
+}
+
+#balloon-container {
+    height: 500px;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: opacity 500ms;
+}
+
+.balloon {
+    height: 125px;
+    width: 105px;
+    border-radius: 75% 75% 70% 70%;
+    position: relative;
+}
+
+.balloon:before {
+    content: "";
+    height: 75px;
+    width: 1px;
+    padding: 1px;
+    background-color: #FDFD96;
+    display: block;
+    position: absolute;
+    top: 125px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.balloon:after {
+    content: "▲";
+    text-align: center;
+    display: block;
+    position: absolute;
+    color: inherit;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes float {
+    from {transform: translateY(100vh);
+        opacity: 1;}
+    to {transform: translateY(-300vh);
+        opacity: 0;}
+}
+
+button{
+    padding: 10px 50px;
+    background: #5092d2;
+    border: none;
+    font-size: 25px;
+}
