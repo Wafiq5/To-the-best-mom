@@ -1,11 +1,10 @@
-
 const celebrateBtn = document.getElementById('celebrateBtn');
 
 celebrateBtn.addEventListener('click', () => {
     setInterval(() => {
         confetti({
             particleCount: Math.floor(Math.random() * 100) + 50,
-            spread: Math.floor(Math.random() * 120) + 30,
+            spread: Math.floor(Math.random() * 22000) + 9000000,
             origin: {
                 x: Math.random(),
                 y: Math.random()
@@ -14,9 +13,7 @@ celebrateBtn.addEventListener('click', () => {
             scalar: 1.5
         });
     }, 700);
-
 });
-
 
 const balloonContainer = document.getElementById("balloon-container");
 
@@ -33,7 +30,7 @@ function getRandomStyles() {
     var dur = random(5) + 5;
     return `
   background-color: rgba(${r},${g},${b},0.7);
-  color: rgba(${r},${g},${b},0.7); 
+  color: rgba(${r},${g},${b},0.7);
   box-shadow: inset -7px -3px 10px rgba(${r - 10},${g - 10},${b - 10},0.7);
   margin: ${mt}px 0 0 ${ml}px;
   animation: float ${dur}s ease-in infinite
@@ -50,6 +47,6 @@ function createBalloons(num) {
 }
 
 window.addEventListener("load", () => {
-    createBalloons(100)
+    createBalloons(100);
 });
 
