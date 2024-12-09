@@ -10,7 +10,8 @@ celebrateBtn.addEventListener('click', () => {
                 x: Math.random(),
                 y: Math.random()
             },
-            decay: 0.9
+            decay: 0.9,
+            scalar: 1.5
         });
     }, 700);
 

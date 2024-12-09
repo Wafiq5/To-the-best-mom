@@ -101,5 +101,10 @@ button{
     padding: 10px 50px;
     background: #5092d2;
     border: none;
-    font-size: 25px;
+    font-size: 15px;
+}
+.mom{
+    font-size: 32px;
+    font-family: "Great Vibes", cursive;
+    font-weight: 1000;
 }
